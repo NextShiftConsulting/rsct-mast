@@ -1,0 +1,2544 @@
+{
+  "experiment": "perturbation_sensitivity",
+  "seed": 42,
+  "n_traces": 61,
+  "perturbation_types": [
+    "inject_repetition",
+    "remove_handoffs",
+    "inject_errors",
+    "truncate"
+  ],
+  "summary": {
+    "inject_repetition": {
+      "mean_signal_delta": 2755.1376,
+      "std_signal_delta": 2423.496,
+      "pct_diagnosis_shifted": 4.92,
+      "mean_confidence_change": -0.0545,
+      "std_confidence_change": 0.0601
+    },
+    "remove_handoffs": {
+      "mean_signal_delta": 0.9162,
+      "std_signal_delta": 0.9013,
+      "pct_diagnosis_shifted": 8.2,
+      "mean_confidence_change": -0.0477,
+      "std_confidence_change": 0.049
+    },
+    "inject_errors": {
+      "mean_signal_delta": 4243.0081,
+      "std_signal_delta": 14695.9809,
+      "pct_diagnosis_shifted": 34.43,
+      "mean_confidence_change": -0.0141,
+      "std_confidence_change": 0.0174
+    },
+    "truncate": {
+      "mean_signal_delta": 69103.6908,
+      "std_signal_delta": 233076.9036,
+      "pct_diagnosis_shifted": 52.46,
+      "mean_confidence_change": -0.0266,
+      "std_confidence_change": 0.052
+    }
+  },
+  "per_trace": [
+    {
+      "instance_id": "02da9c1f-7c36-5739-b723-33a7d4f8e7e7",
+      "source": "AG2",
+      "n_steps_original": 10,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9491,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 25,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9067,
+          "signal_delta": 4630.1296,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0424
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 10,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0741
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 10,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9494,
+          "signal_delta": 7.0363,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0003
+        },
+        "truncate": {
+          "n_steps_perturbed": 3,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.941,
+          "signal_delta": 1721.1744,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0081
+        }
+      }
+    },
+    {
+      "instance_id": "08a6477e-37a2-5633-8a6e-478b568a578e",
+      "source": "AG2",
+      "n_steps_original": 8,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9349,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 23,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8228,
+          "signal_delta": 1474.8286,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1121
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.8417,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0932
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9349,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 2,
+          "diagnosis": "GCF-3.3",
+          "confidence": 1.0,
+          "signal_delta": 1140.166,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0651
+        }
+      }
+    },
+    {
+      "instance_id": "094b6ef4-9501-550d-b9f8-4d5330d07e34",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9788,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.852,
+          "signal_delta": 4309.9452,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1268
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8788,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.979,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0002
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1163.2947,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.076
+        }
+      }
+    },
+    {
+      "instance_id": "0ff37ee5-529e-5503-bf41-d1e9c78f578e",
+      "source": "AG2",
+      "n_steps_original": 8,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9642,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 23,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8694,
+          "signal_delta": 3523.0543,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0948
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8642,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.965,
+          "signal_delta": 14.1117,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0008
+        },
+        "truncate": {
+          "n_steps_perturbed": 2,
+          "diagnosis": "GCF-3.3",
+          "confidence": 1.0,
+          "signal_delta": 1688.7021,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0358
+        }
+      }
+    },
+    {
+      "instance_id": "14137873-7797-5cdd-ae7f-abb88d8158a3",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9781,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8499,
+          "signal_delta": 5611.2688,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1282
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8781,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9781,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1506.2205,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0753
+        }
+      }
+    },
+    {
+      "instance_id": "2a8fa54b-df25-5d6f-a7a0-e40885768b1b",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9586,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8321,
+          "signal_delta": 1825.3676,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1265
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8586,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9588,
+          "signal_delta": 14.197,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0002
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1386.6649,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0558
+        }
+      }
+    },
+    {
+      "instance_id": "2e7a0791-92af-5e3c-b186-145c42105766",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9748,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8554,
+          "signal_delta": 5012.4455,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1194
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8748,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9755,
+          "signal_delta": 14.197,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0007
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.7269,
+          "signal_delta": 2019.8777,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.2479
+        }
+      }
+    },
+    {
+      "instance_id": "305925e4-8c67-5460-abdb-b143cf45a9fd",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9827,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8602,
+          "signal_delta": 4389.8984,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1225
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8827,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9835,
+          "signal_delta": 21.6593,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0008
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1177.519,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0799
+        }
+      }
+    },
+    {
+      "instance_id": "3fecef98-fc49-5912-8be2-fa8c02e949a2",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.986,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8541,
+          "signal_delta": 7197.6971,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1319
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.886,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9865,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0005
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1621.1112,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0832
+        }
+      }
+    },
+    {
+      "instance_id": "58be8739-d76d-579a-8ceb-ffc2f3064f18",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9612,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8289,
+          "signal_delta": 1744.8661,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1323
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8612,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9618,
+          "signal_delta": 21.2955,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0006
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1535.2376,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0584
+        }
+      }
+    },
+    {
+      "instance_id": "65b61e80-7336-5503-84bd-8c4a500b011e",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9899,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8616,
+          "signal_delta": 6509.0403,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1283
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8899,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9906,
+          "signal_delta": 14.197,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0007
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 3231.0748,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0871
+        }
+      }
+    },
+    {
+      "instance_id": "674c4a6f-7e3f-5f2f-9f88-4b3a7674a2f5",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9618,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8389,
+          "signal_delta": 2621.9953,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1229
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8618,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9624,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0006
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1084.1949,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.059
+        }
+      }
+    },
+    {
+      "instance_id": "6891537b-54d7-5f49-b9e4-790b5e6a5de6",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.8242,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8254,
+          "signal_delta": 4472.1592,
+          "diagnosis_shifted": true,
+          "confidence_change": 0.0012
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.7861,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0381
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.8242,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1310.7671,
+          "diagnosis_shifted": true,
+          "confidence_change": 0.0786
+        }
+      }
+    },
+    {
+      "instance_id": "70d75156-c32c-5068-b64d-bd587fa0a4a5",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9774,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8607,
+          "signal_delta": 3753.9791,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1167
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8774,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9774,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1784.8899,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0746
+        }
+      }
+    },
+    {
+      "instance_id": "7a11cca5-aa2e-5f44-8ff9-35f3bbd0946e",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.981,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8512,
+          "signal_delta": 5924.7182,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1298
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.881,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9816,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0006
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1485.1216,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0782
+        }
+      }
+    },
+    {
+      "instance_id": "81dedb5e-c591-5b17-afc4-f242a2751574",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 1.0,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8883,
+          "signal_delta": 5778.1141,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1117
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 1.0,
+          "signal_delta": 21.6593,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1360.2516,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0972
+        }
+      }
+    },
+    {
+      "instance_id": "879c8582-0405-55b7-bdaa-94202ce844ac",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9516,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8228,
+          "signal_delta": 1778.707,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1288
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8516,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9524,
+          "signal_delta": 14.197,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0008
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1508.0916,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0488
+        }
+      }
+    },
+    {
+      "instance_id": "882b00dd-ba1e-553d-b3c7-2760e2ff169c",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9706,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8481,
+          "signal_delta": 2991.3172,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1225
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8706,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.971,
+          "signal_delta": 7.0985,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0004
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 2024.4108,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0678
+        }
+      }
+    },
+    {
+      "instance_id": "8ebbc1ed-c0c2-522e-8949-60cb5dd24938",
+      "source": "AG2",
+      "n_steps_original": 8,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9677,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 23,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8763,
+          "signal_delta": 5861.6572,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0914
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8677,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9681,
+          "signal_delta": 7.0556,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0004
+        },
+        "truncate": {
+          "n_steps_perturbed": 2,
+          "diagnosis": "GCF-3.3",
+          "confidence": 1.0,
+          "signal_delta": 2429.1194,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0323
+        }
+      }
+    },
+    {
+      "instance_id": "957ccc1d-ac66-5a10-9755-aa2a1044d4ab",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9456,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8309,
+          "signal_delta": 1898.8731,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1147
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8456,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9459,
+          "signal_delta": 14.197,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0003
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1371.6334,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0428
+        }
+      }
+    },
+    {
+      "instance_id": "98b26f55-b534-5950-b25f-a0f2e57fd8be",
+      "source": "AG2",
+      "n_steps_original": 8,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9775,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 23,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8619,
+          "signal_delta": 11205.4223,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1156
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8775,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 8,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9779,
+          "signal_delta": 14.1112,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0004
+        },
+        "truncate": {
+          "n_steps_perturbed": 2,
+          "diagnosis": "GCF-3.3",
+          "confidence": 1.0,
+          "signal_delta": 3255.6254,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0225
+        }
+      }
+    },
+    {
+      "instance_id": "a49f0912-ada2-5052-91f9-94f615ec9597",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9751,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8529,
+          "signal_delta": 3187.0405,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1222
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8751,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9751,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1846.9237,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0723
+        }
+      }
+    },
+    {
+      "instance_id": "a536a498-8195-51c7-8f84-9fd235b62490",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.8,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8254,
+          "signal_delta": 7702.5068,
+          "diagnosis_shifted": true,
+          "confidence_change": 0.0254
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.7939,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0061
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1710.5258,
+          "diagnosis_shifted": true,
+          "confidence_change": 0.1028
+        }
+      }
+    },
+    {
+      "instance_id": "a5714da3-9107-5a28-a6df-bb97dcf4e29a",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9653,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8398,
+          "signal_delta": 3014.6483,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1255
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8653,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9651,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0002
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1093.8996,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0625
+        }
+      }
+    },
+    {
+      "instance_id": "ac636464-515f-5ffc-b284-a9f738e74a2c",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9723,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8572,
+          "signal_delta": 3968.6001,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1151
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8723,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9728,
+          "signal_delta": 7.0985,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0005
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1796.943,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0695
+        }
+      }
+    },
+    {
+      "instance_id": "bb32247c-aef8-5366-8d9c-1ac7e032b48f",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 1.0,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8944,
+          "signal_delta": 8541.5642,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1056
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9018,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0982
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 1.0,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1816.5415,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0972
+        }
+      }
+    },
+    {
+      "instance_id": "c6f0169a-6b0f-5a3f-a3bb-a9435480d9a7",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9651,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8496,
+          "signal_delta": 2646.6674,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1155
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8651,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9655,
+          "signal_delta": 7.0985,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0004
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1552.3994,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0623
+        }
+      }
+    },
+    {
+      "instance_id": "c8a83329-9e1c-5201-a22a-f831bc45e949",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9801,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8526,
+          "signal_delta": 4849.9295,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1275
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8801,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9802,
+          "signal_delta": 7.2198,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0001
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1275.0715,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0773
+        }
+      }
+    },
+    {
+      "instance_id": "cd2629df-fb3c-5937-96ad-40aa20d8f149",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9676,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.864,
+          "signal_delta": 5256.8139,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1036
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8676,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9684,
+          "signal_delta": 14.197,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0008
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1935.9419,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0648
+        }
+      }
+    },
+    {
+      "instance_id": "d442f2ae-2e65-5547-82c5-4a325f8d8710",
+      "source": "AG2",
+      "n_steps_original": 6,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9556,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 21,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8431,
+          "signal_delta": 2530.3758,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1125
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8556,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 6,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9562,
+          "signal_delta": 21.2955,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0006
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1407.7524,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0528
+        }
+      }
+    },
+    {
+      "instance_id": "d8c37fac-fcc1-5fdd-9dc4-4daf33a02f73",
+      "source": "AG2",
+      "n_steps_original": 4,
+      "original_diagnosis": "GCF-3.3",
+      "original_confidence": 0.9917,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 19,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8657,
+          "signal_delta": 6178.2564,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.126
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.8917,
+          "signal_delta": 1.8028,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.1
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4,
+          "diagnosis": "GCF-3.3",
+          "confidence": 0.9917,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "truncate": {
+          "n_steps_perturbed": 1,
+          "diagnosis": "GCF-2.3",
+          "confidence": 0.9028,
+          "signal_delta": 1450.1183,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0889
+        }
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-12907",
+      "source": "HyperAgent",
+      "n_steps_original": 3551,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9223,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 3566,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9229,
+          "signal_delta": 600.1875,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0006
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 3551,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9223,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 3551,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9067,
+          "signal_delta": 7567.0003,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0156
+        },
+        "truncate": {
+          "n_steps_perturbed": 1065,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9235,
+          "signal_delta": 151156.4444,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0012
+        }
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14365",
+      "source": "HyperAgent",
+      "n_steps_original": 10535,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9335,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 10550,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9337,
+          "signal_delta": 665.1692,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0002
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 10535,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9335,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 10535,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9175,
+          "signal_delta": 21924.0001,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.016
+        },
+        "truncate": {
+          "n_steps_perturbed": 3160,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 363060.9134,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0135
+        }
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-6938",
+      "source": "HyperAgent",
+      "n_steps_original": 2610,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9247,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 2625,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9256,
+          "signal_delta": 590.1907,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0009
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 2610,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9247,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 2610,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9086,
+          "signal_delta": 5348.0004,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0161
+        },
+        "truncate": {
+          "n_steps_perturbed": 783,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 101763.4018,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0047
+        }
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-7746",
+      "source": "HyperAgent",
+      "n_steps_original": 53244,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9672,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 53259,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9673,
+          "signal_delta": 900.125,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0001
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 53244,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9672,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 53244,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9553,
+          "signal_delta": 110733.0,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0119
+        },
+        "truncate": {
+          "n_steps_perturbed": 15973,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9538,
+          "signal_delta": 1756011.5794,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0134
+        }
+      }
+    },
+    {
+      "instance_id": "django__django-10924",
+      "source": "HyperAgent",
+      "n_steps_original": 553,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 568,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9203,
+          "signal_delta": 580.1942,
+          "diagnosis_shifted": true,
+          "confidence_change": 0.0003
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 553,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 553,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8954,
+          "signal_delta": 1134.0019,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0246
+        },
+        "truncate": {
+          "n_steps_perturbed": 165,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 22778.3048,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "django__django-11179",
+      "source": "HyperAgent",
+      "n_steps_original": 1130,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.9174,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1145,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.9176,
+          "signal_delta": 635.1771,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0002
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1130,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.9174,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1130,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9054,
+          "signal_delta": 2254.0009,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.012
+        },
+        "truncate": {
+          "n_steps_perturbed": 339,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 34476.0775,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0026
+        }
+      }
+    },
+    {
+      "instance_id": "django__django-11742",
+      "source": "HyperAgent",
+      "n_steps_original": 766,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 781,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 615.183,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 766,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 766,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 1526.0013,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.045
+        },
+        "truncate": {
+          "n_steps_perturbed": 229,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 32678.4127,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-18869",
+      "source": "HyperAgent",
+      "n_steps_original": 1043,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1058,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 625.18,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1043,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1043,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8768,
+          "signal_delta": 2100.001,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0432
+        },
+        "truncate": {
+          "n_steps_perturbed": 312,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 39345.7918,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23299",
+      "source": "HyperAgent",
+      "n_steps_original": 11204,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9547,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 11219,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9548,
+          "signal_delta": 1280.0879,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0001
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 11204,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9547,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 11204,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.94,
+          "signal_delta": 24122.0001,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0147
+        },
+        "truncate": {
+          "n_steps_perturbed": 3361,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9366,
+          "signal_delta": 379343.0865,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0181
+        }
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23563",
+      "source": "HyperAgent",
+      "n_steps_original": 11583,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9535,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 11598,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9536,
+          "signal_delta": 1850.0608,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0001
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 11583,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9535,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 11583,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9374,
+          "signal_delta": 24374.0001,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0161
+        },
+        "truncate": {
+          "n_steps_perturbed": 3474,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9291,
+          "signal_delta": 378269.9266,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0244
+        }
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24265",
+      "source": "HyperAgent",
+      "n_steps_original": 516,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 531,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 1280.0882,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 516,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 516,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8822,
+          "signal_delta": 1246.0024,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0378
+        },
+        "truncate": {
+          "n_steps_perturbed": 154,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 18085.6241,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24334",
+      "source": "HyperAgent",
+      "n_steps_original": 4040,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9278,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 4055,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9283,
+          "signal_delta": 440.2556,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0005
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 4040,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9278,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 4040,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9065,
+          "signal_delta": 8225.0003,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0213
+        },
+        "truncate": {
+          "n_steps_perturbed": 1212,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 127284.4202,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0078
+        }
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25433",
+      "source": "HyperAgent",
+      "n_steps_original": 689,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 704,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 2570.045,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 689,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 689,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 1470.0016,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.045
+        },
+        "truncate": {
+          "n_steps_perturbed": 206,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 25066.6548,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "mwaskom__seaborn-2848",
+      "source": "HyperAgent",
+      "n_steps_original": 3451,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 3466,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 320.3514,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 3451,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 3451,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8994,
+          "signal_delta": 7231.0003,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0206
+        },
+        "truncate": {
+          "n_steps_perturbed": 1035,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 126740.0298,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3407",
+      "source": "HyperAgent",
+      "n_steps_original": 1262,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1277,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 720.1562,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1262,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1262,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 2555.0008,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.045
+        },
+        "truncate": {
+          "n_steps_perturbed": 378,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 34208.4243,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "pallets__flask-4992",
+      "source": "HyperAgent",
+      "n_steps_original": 1440,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9236,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1455,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9249,
+          "signal_delta": 1855.0608,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0013
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1440,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9236,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1440,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9096,
+          "signal_delta": 3080.0008,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.014
+        },
+        "truncate": {
+          "n_steps_perturbed": 432,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 38390.236,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0036
+        }
+      }
+    },
+    {
+      "instance_id": "pallets__flask-5063",
+      "source": "HyperAgent",
+      "n_steps_original": 1866,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1881,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 1345.0837,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1866,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1866,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9058,
+          "signal_delta": 3843.0006,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0142
+        },
+        "truncate": {
+          "n_steps_perturbed": 559,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 57245.9223,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "psf__requests-1963",
+      "source": "HyperAgent",
+      "n_steps_original": 777,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 792,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 1355.0832,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 777,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 777,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 1610.0014,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.045
+        },
+        "truncate": {
+          "n_steps_perturbed": 233,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 26064.6788,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "psf__requests-2317",
+      "source": "HyperAgent",
+      "n_steps_original": 535,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 550,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 1740.0656,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 535,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 535,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 1197.0021,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.045
+        },
+        "truncate": {
+          "n_steps_perturbed": 160,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 17636.9886,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-4493",
+      "source": "HyperAgent",
+      "n_steps_original": 1089,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1104,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 810.1389,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1089,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1089,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8782,
+          "signal_delta": 2338.001,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0418
+        },
+        "truncate": {
+          "n_steps_perturbed": 326,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 30192.6459,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6506",
+      "source": "HyperAgent",
+      "n_steps_original": 325,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.9035,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 340,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.9116,
+          "signal_delta": 76.5251,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0081
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 325,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.9035,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 325,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.8492,
+          "signal_delta": 644.0031,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0543
+        },
+        "truncate": {
+          "n_steps_perturbed": 97,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 13206.97,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0165
+        }
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7168",
+      "source": "HyperAgent",
+      "n_steps_original": 395,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.8954,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 410,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.9023,
+          "signal_delta": 435.2604,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0069
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 395,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.8954,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 395,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.8659,
+          "signal_delta": 812.0027,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0295
+        },
+        "truncate": {
+          "n_steps_perturbed": 118,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 15177.5423,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0204
+        }
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10508",
+      "source": "HyperAgent",
+      "n_steps_original": 689,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 704,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 980.1148,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 689,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 689,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8807,
+          "signal_delta": 1519.0016,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0393
+        },
+        "truncate": {
+          "n_steps_perturbed": 206,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 23628.9371,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "source": "HyperAgent",
+      "n_steps_original": 771,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.9065,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 786,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.9055,
+          "signal_delta": 1410.08,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.001
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 771,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.9065,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 771,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8766,
+          "signal_delta": 1568.0013,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0299
+        },
+        "truncate": {
+          "n_steps_perturbed": 231,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 32677.4633,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0135
+        }
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-15535",
+      "source": "HyperAgent",
+      "n_steps_original": 2330,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 2345,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 445.2527,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 2330,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 2330,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8975,
+          "signal_delta": 4935.0005,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0225
+        },
+        "truncate": {
+          "n_steps_perturbed": 699,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 71319.6521,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25570",
+      "source": "HyperAgent",
+      "n_steps_original": 578,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 593,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 1480.0765,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 578,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 578,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 1134.0017,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.045
+        },
+        "truncate": {
+          "n_steps_perturbed": 173,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 20849.9338,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "source": "HyperAgent",
+      "n_steps_original": 1189,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1204,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 525.2143,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1189,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1189,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.8944,
+          "signal_delta": 2478.0009,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0256
+        },
+        "truncate": {
+          "n_steps_perturbed": 356,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 38666.9761,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8435",
+      "source": "HyperAgent",
+      "n_steps_original": 2963,
+      "original_diagnosis": "GCF-3.2",
+      "original_confidence": 0.9222,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 2978,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9229,
+          "signal_delta": 675.1666,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0007
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 2963,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9222,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 2963,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9035,
+          "signal_delta": 6139.0004,
+          "diagnosis_shifted": false,
+          "confidence_change": -0.0187
+        },
+        "truncate": {
+          "n_steps_perturbed": 888,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 105854.3396,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0022
+        }
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-11400",
+      "source": "HyperAgent",
+      "n_steps_original": 935,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 950,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 720.1562,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 935,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 935,
+          "diagnosis": "GCF-1.2",
+          "confidence": 0.875,
+          "signal_delta": 1960.0011,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.045
+        },
+        "truncate": {
+          "n_steps_perturbed": 280,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 26832.9961,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-12481",
+      "source": "HyperAgent",
+      "n_steps_original": 1683,
+      "original_diagnosis": "GCF-2.2",
+      "original_confidence": 0.92,
+      "perturbations": {
+        "inject_repetition": {
+          "n_steps_perturbed": 1698,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 145.7741,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "remove_handoffs": {
+          "n_steps_perturbed": 1683,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 0.0,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        },
+        "inject_errors": {
+          "n_steps_perturbed": 1683,
+          "diagnosis": "GCF-3.2",
+          "confidence": 0.9033,
+          "signal_delta": 3465.0006,
+          "diagnosis_shifted": true,
+          "confidence_change": -0.0167
+        },
+        "truncate": {
+          "n_steps_perturbed": 504,
+          "diagnosis": "GCF-2.2",
+          "confidence": 0.92,
+          "signal_delta": 55619.4975,
+          "diagnosis_shifted": false,
+          "confidence_change": 0.0
+        }
+      }
+    }
+  ]
+}

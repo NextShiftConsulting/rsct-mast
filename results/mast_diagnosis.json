@@ -1,0 +1,4789 @@
+{
+  "meta": {
+    "n_traces": 61,
+    "sources": {
+      "AG2": 31,
+      "HyperAgent": 30
+    },
+    "gc_mode_frequency": {
+      "GCF-3.3": 58,
+      "GCF-3.2": 3
+    },
+    "gc_category_frequency": {
+      "GC3": 61
+    },
+    "mean_confidence": 0.7948770491803281
+  },
+  "cross_tabulation": {
+    "counts": {
+      "FC1_Specification": {
+        "GC3": 16
+      },
+      "FC2_Misalignment": {
+        "GC3": 14
+      },
+      "FC3_Verification": {
+        "GC3": 43
+      },
+      "baseline": {
+        "GC3": 9
+      }
+    },
+    "row_pct": {
+      "FC1_Specification": {
+        "GC1": 0.0,
+        "GC2": 0.0,
+        "GC3": 100.0
+      },
+      "FC2_Misalignment": {
+        "GC1": 0.0,
+        "GC2": 0.0,
+        "GC3": 100.0
+      },
+      "FC3_Verification": {
+        "GC1": 0.0,
+        "GC2": 0.0,
+        "GC3": 100.0
+      },
+      "baseline": {
+        "GC1": 0.0,
+        "GC2": 0.0,
+        "GC3": 100.0
+      }
+    },
+    "col_pct": {
+      "GC1": {
+        "FC1_Specification": 0.0,
+        "FC2_Misalignment": 0.0,
+        "FC3_Verification": 0.0,
+        "baseline": 0.0
+      },
+      "GC2": {
+        "FC1_Specification": 0.0,
+        "FC2_Misalignment": 0.0,
+        "FC3_Verification": 0.0,
+        "baseline": 0.0
+      },
+      "GC3": {
+        "FC1_Specification": 26.2,
+        "FC2_Misalignment": 23.0,
+        "FC3_Verification": 70.5,
+        "baseline": 14.8
+      }
+    },
+    "marginals": {
+      "mast": {
+        "FC1_Specification": 16,
+        "FC2_Misalignment": 14,
+        "FC3_Verification": 43,
+        "baseline": 9
+      },
+      "gc": {
+        "GC3": 61
+      }
+    }
+  },
+  "interpretation": "INTERPRETATION\n--------------------------------------------------\n  FC1 (Specification) traces predominantly map to GC3 (100% of row).\n  FC2 (Misalignment) traces predominantly map to GC3 (100% of row).\n  FC3 (Verification) traces predominantly map to GC3 (100% of row).\n\n  ORTHOGONAL STRUCTURE: All three MAST categories map to the same GeoCert category (GC3). The two taxonomies are capturing different axes of failure.\n\n  Diagnosis confidence \u2014 mean: 0.795  min: 0.780  max: 0.915\n  (Low confidence reflects that MAST traces are execution-behaviour data mapped through a heuristic bridge to GeoCert's evaluation-failure signal space.  Treat diagnosis as indicative, not definitive.)",
+  "traces": [
+    {
+      "instance_id": "02da9c1f-7c36-5739-b723-33a7d4f8e7e7",
+      "source": "AG2",
+      "n_steps": 10,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.7178
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.66
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.15000000000000002,
+        "gate_entropy": 0.06666666666666667,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.18166666666666664,
+        "delta_structure": 0.2328321820398212,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4444444444444444,
+        "noisy_control_similarity": 0.30000000000000004,
+        "trf_correlation": 0.0,
+        "target_variance": 0.1,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5661827512100629,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.02,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.30000000000000004,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.2,
+        "code_density": 0.3,
+        "n_steps": 10,
+        "total_chars": 3607,
+        "mean_step_length": 360.7,
+        "length_cv": 1.0602255024201257,
+        "growth_ratio": 0.4656643640796424,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.5555555555555556
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "08a6477e-37a2-5633-8a6e-478b568a578e",
+      "source": "AG2",
+      "n_steps": 8,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 3,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6789
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.652
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0625,
+        "gate_entropy": 0.08333333333333333,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.21666666666666667,
+        "delta_structure": 0.06940170940170941,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4285714285714286,
+        "noisy_control_similarity": 0.125,
+        "trf_correlation": 0.0,
+        "target_variance": 0.08,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.6807660457327942,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.025,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.125,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.25,
+        "code_density": 1.0,
+        "n_steps": 8,
+        "total_chars": 3331,
+        "mean_step_length": 416.375,
+        "length_cv": 1.2949120914655885,
+        "growth_ratio": 0.13880341880341882,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.5714285714285714
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "094b6ef4-9501-550d-b9f8-4d5330d07e34",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.25416666666666665,
+        "delta_structure": 0.019686907020872866,
+        "sigma_outlier": 0.9905515137310132,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5171857568655066,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.009448486268986755,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 1.75,
+        "n_steps": 4,
+        "total_chars": 2191,
+        "mean_step_length": 547.75,
+        "length_cv": 0.9905515137310132,
+        "growth_ratio": 0.03937381404174573,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "0ff37ee5-529e-5503-bf41-d1e9c78f578e",
+      "source": "AG2",
+      "n_steps": 8,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6789
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.652
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0625,
+        "gate_entropy": 0.08333333333333333,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.23541666666666666,
+        "delta_structure": 0.14355914355914356,
+        "sigma_outlier": 0.9934284162871312,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4285714285714286,
+        "noisy_control_similarity": 0.125,
+        "trf_correlation": 0.0,
+        "target_variance": 0.08,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5333842081435656,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0065715837128688115,
+        "proxy_success_corr": 0.025,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.125,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.25,
+        "code_density": 1.375,
+        "n_steps": 8,
+        "total_chars": 3667,
+        "mean_step_length": 458.375,
+        "length_cv": 0.9934284162871312,
+        "growth_ratio": 0.28711828711828713,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.5714285714285714
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "14137873-7797-5cdd-ae7f-abb88d8158a3",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.29166666666666663,
+        "delta_structure": 0.01638747268754552,
+        "sigma_outlier": 0.9975476264351052,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5271338132175526,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0024523735648948053,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 2.5,
+        "n_steps": 4,
+        "total_chars": 2836,
+        "mean_step_length": 709.0,
+        "length_cv": 0.9975476264351052,
+        "growth_ratio": 0.03277494537509104,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "2a8fa54b-df25-5d6f-a7a0-e40885768b1b",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 3,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.22499999999999998,
+        "delta_structure": 0.09120603015075376,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.6181626212776618,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.1666666666666667,
+        "n_steps": 6,
+        "total_chars": 2353,
+        "mean_step_length": 392.1666666666667,
+        "length_cv": 1.1892652425553234,
+        "growth_ratio": 0.18241206030150753,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "2e7a0791-92af-5e3c-b186-145c42105766",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.26666666666666666,
+        "delta_structure": 0.21678926871484205,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5466834066487304,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 2.0,
+        "n_steps": 6,
+        "total_chars": 3313,
+        "mean_step_length": 552.1666666666666,
+        "length_cv": 1.0271068132974608,
+        "growth_ratio": 0.4335785374296841,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "305925e4-8c67-5460-abdb-b143cf45a9fd",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.24166666666666664,
+        "delta_structure": 0.03473227206946455,
+        "sigma_outlier": 0.956658471902582,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.500499235951291,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.04334152809741798,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 1.5,
+        "n_steps": 4,
+        "total_chars": 2217,
+        "mean_step_length": 554.25,
+        "length_cv": 0.956658471902582,
+        "growth_ratio": 0.0694645441389291,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "3fecef98-fc49-5912-8be2-fa8c02e949a2",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.25416666666666665,
+        "delta_structure": 0.019614835948644792,
+        "sigma_outlier": 0.9285864650018238,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.4934332325009119,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.07141353499817615,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 1.75,
+        "n_steps": 4,
+        "total_chars": 2914,
+        "mean_step_length": 728.5,
+        "length_cv": 0.9285864650018238,
+        "growth_ratio": 0.039229671897289584,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "58be8739-d76d-579a-8ceb-ffc2f3064f18",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC1_Specification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.22499999999999998,
+        "delta_structure": 0.07685473123056419,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.6067752249994774,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.1666666666666667,
+        "n_steps": 6,
+        "total_chars": 2597,
+        "mean_step_length": 432.8333333333333,
+        "length_cv": 1.1616104499989548,
+        "growth_ratio": 0.15370946246112838,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "65b61e80-7336-5503-84bd-8c4a500b011e",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC1_Specification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8015,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8015
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.06666666666666667,
+        "fine_routing_accuracy": 0.3,
+        "delta_structure": 0.20183059261557554,
+        "sigma_outlier": 0.8965193518240137,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.1111111111111111,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.49349967591200683,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.10348064817598635,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.3333333333333333,
+        "verify_density": 0.5,
+        "code_density": 2.6666666666666665,
+        "n_steps": 6,
+        "total_chars": 4524,
+        "mean_step_length": 754.0,
+        "length_cv": 0.8965193518240137,
+        "growth_ratio": 0.4036611852311511,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.801 [GC3]"
+    },
+    {
+      "instance_id": "674c4a6f-7e3f-5f2f-9f88-4b3a7674a2f5",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.7917,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.7917
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.613
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.4166666666666667,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.25416666666666665,
+        "delta_structure": 0.03371397498640565,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5973178311367283,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.125,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 1.25,
+        "code_density": 1.75,
+        "n_steps": 4,
+        "total_chars": 1963,
+        "mean_step_length": 490.75,
+        "length_cv": 1.1553756622734566,
+        "growth_ratio": 0.0674279499728113,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.792 [GC3]"
+    },
+    {
+      "instance_id": "6891537b-54d7-5f49-b9e4-790b5e6a5de6",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.2",
+          "name": "Gate Compression",
+          "category": "GC2",
+          "confidence": 0.7164
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.716
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.24166666666666664,
+        "delta_structure": 0.016088591725867112,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 1.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5420488715938552,
+        "all_execute_rate": 1.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.55,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 1.5,
+        "n_steps": 4,
+        "total_chars": 2470,
+        "mean_step_length": 617.5,
+        "length_cv": 1.0346977431877102,
+        "growth_ratio": 0.032177183451734225,
+        "has_termination": 1.0,
+        "tail_termination": 1.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "70d75156-c32c-5068-b64d-bd587fa0a4a5",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 4,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.24166666666666664,
+        "delta_structure": 0.17076502732240437,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5311602021872548,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.5,
+        "n_steps": 6,
+        "total_chars": 2946,
+        "mean_step_length": 491.0,
+        "length_cv": 1.0034004043745095,
+        "growth_ratio": 0.34153005464480873,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "7a11cca5-aa2e-5f44-8ff9-35f3bbd0946e",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.26666666666666666,
+        "delta_structure": 0.01618905842947525,
+        "sigma_outlier": 0.97122393599876,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.51335196799938,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.028776064001239998,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 2.0,
+        "n_steps": 4,
+        "total_chars": 2774,
+        "mean_step_length": 693.5,
+        "length_cv": 0.97122393599876,
+        "growth_ratio": 0.0323781168589505,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "81dedb5e-c591-5b17-afc4-f242a2751574",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8455,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8455
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.26666666666666666,
+        "delta_structure": 0.08255597014925373,
+        "sigma_outlier": 0.7975557065605138,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.4237578532802569,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.20244429343948622,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 2.0,
+        "n_steps": 4,
+        "total_chars": 2498,
+        "mean_step_length": 624.5,
+        "length_cv": 0.7975557065605138,
+        "growth_ratio": 0.16511194029850745,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.846 [GC3]"
+    },
+    {
+      "instance_id": "879c8582-0405-55b7-bdaa-94202ce844ac",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.22499999999999998,
+        "delta_structure": 0.08022727272727273,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.6590873325207245,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.1666666666666667,
+        "n_steps": 6,
+        "total_chars": 2553,
+        "mean_step_length": 425.5,
+        "length_cv": 1.2671146650414489,
+        "growth_ratio": 0.16045454545454546,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "882b00dd-ba1e-553d-b3c7-2760e2ff169c",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC1_Specification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.21666666666666667,
+        "delta_structure": 0.10734870317002881,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5668895967098293,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.0,
+        "n_steps": 6,
+        "total_chars": 3372,
+        "mean_step_length": 562.0,
+        "length_cv": 1.0663391934196587,
+        "growth_ratio": 0.21469740634005763,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "8ebbc1ed-c0c2-522e-8949-60cb5dd24938",
+      "source": "AG2",
+      "n_steps": 8,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 4,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.652
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.08333333333333333,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.05,
+        "fine_routing_accuracy": 0.27291666666666664,
+        "delta_structure": 0.20294289044289043,
+        "sigma_outlier": 0.9624714935393477,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4285714285714286,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.08,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.08333333333333333,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5294857467696739,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.03752850646065231,
+        "proxy_success_corr": 0.025,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.25,
+        "verify_density": 0.25,
+        "code_density": 2.125,
+        "n_steps": 8,
+        "total_chars": 4825,
+        "mean_step_length": 603.125,
+        "length_cv": 0.9624714935393477,
+        "growth_ratio": 0.40588578088578087,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.5714285714285714
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "957ccc1d-ac66-5a10-9755-aa2a1044d4ab",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.21666666666666667,
+        "delta_structure": 0.09879769994772608,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.692133142632269,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.0,
+        "n_steps": 6,
+        "total_chars": 2291,
+        "mean_step_length": 381.8333333333333,
+        "length_cv": 1.338446285264538,
+        "growth_ratio": 0.19759539989545216,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "98b26f55-b534-5950-b25f-a0f2e57fd8be",
+      "source": "AG2",
+      "n_steps": 8,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8082,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8082
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6789
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.652
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0625,
+        "gate_entropy": 0.08333333333333333,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.22916666666666666,
+        "delta_structure": 0.4821867321867322,
+        "sigma_outlier": 0.881443732829126,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4285714285714286,
+        "noisy_control_similarity": 0.125,
+        "trf_correlation": 0.0,
+        "target_variance": 0.08,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.488691866414563,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.11855626717087397,
+        "proxy_success_corr": 0.025,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.125,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.25,
+        "code_density": 1.25,
+        "n_steps": 8,
+        "total_chars": 4797,
+        "mean_step_length": 599.625,
+        "length_cv": 0.881443732829126,
+        "growth_ratio": 0.9643734643734644,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.5714285714285714
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.808 [GC3]"
+    },
+    {
+      "instance_id": "a49f0912-ada2-5052-91f9-94f615ec9597",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.22499999999999998,
+        "delta_structure": 0.13195020746887967,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5426972473109397,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.1666666666666667,
+        "n_steps": 6,
+        "total_chars": 3046,
+        "mean_step_length": 507.6666666666667,
+        "length_cv": 1.0244744946218793,
+        "growth_ratio": 0.26390041493775934,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "a536a498-8195-51c7-8f84-9fd235b62490",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8686,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8686
+        },
+        {
+          "mode": "GCF-2.2",
+          "name": "Gate Compression",
+          "category": "GC2",
+          "confidence": 0.7345
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.716
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.05,
+        "fine_routing_accuracy": 0.31666666666666665,
+        "delta_structure": 0.08352490421455938,
+        "sigma_outlier": 0.7455456228748756,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 1.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.08333333333333333,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.4032328114374378,
+        "all_execute_rate": 1.0,
+        "native_tightness": 0.2544543771251244,
+        "proxy_success_corr": 0.55,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.25,
+        "verify_density": 0.5,
+        "code_density": 3.0,
+        "n_steps": 4,
+        "total_chars": 3046,
+        "mean_step_length": 761.5,
+        "length_cv": 0.7455456228748756,
+        "growth_ratio": 0.16704980842911876,
+        "has_termination": 1.0,
+        "tail_termination": 1.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.869 [GC3]"
+    },
+    {
+      "instance_id": "a5714da3-9107-5a28-a6df-bb97dcf4e29a",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.24166666666666664,
+        "delta_structure": 0.018480492813141684,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5798341425367066,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 1.5,
+        "n_steps": 4,
+        "total_chars": 2020,
+        "mean_step_length": 505.0,
+        "length_cv": 1.1192682850734132,
+        "growth_ratio": 0.03696098562628337,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "ac636464-515f-5ffc-b284-a9f738e74a2c",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.22499999999999998,
+        "delta_structure": 0.17965564114182148,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5553427452625572,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.1666666666666667,
+        "n_steps": 6,
+        "total_chars": 3000,
+        "mean_step_length": 500.0,
+        "length_cv": 1.0506854905251144,
+        "growth_ratio": 0.35931128228364295,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "bb32247c-aef8-5366-8d9c-1ac7e032b48f",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.9151,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.9151
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.26666666666666666,
+        "delta_structure": 0.15222876366694701,
+        "sigma_outlier": 0.6410036496621891,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.35152182483109456,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.35899635033781085,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 2.0,
+        "n_steps": 4,
+        "total_chars": 3102,
+        "mean_step_length": 775.5,
+        "length_cv": 0.6410036496621891,
+        "growth_ratio": 0.30445752733389403,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.915 [GC3]"
+    },
+    {
+      "instance_id": "c6f0169a-6b0f-5a3f-a3bb-a9435480d9a7",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.23333333333333334,
+        "delta_structure": 0.12571428571428572,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5869965254384233,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.3333333333333333,
+        "n_steps": 6,
+        "total_chars": 2628,
+        "mean_step_length": 438.0,
+        "length_cv": 1.1214330508768466,
+        "growth_ratio": 0.25142857142857145,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "c8a83329-9e1c-5201-a22a-f831bc45e949",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.2791666666666667,
+        "delta_structure": 0.020182291666666668,
+        "sigma_outlier": 0.9796170344094104,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5137785172047052,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.020382965590589608,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 2.25,
+        "n_steps": 4,
+        "total_chars": 2397,
+        "mean_step_length": 599.25,
+        "length_cv": 0.9796170344094104,
+        "growth_ratio": 0.040364583333333336,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "cd2629df-fb3c-5937-96ad-40aa20d8f149",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 3,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.31666666666666665,
+        "delta_structure": 0.2384301270417423,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.5804447434148365,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 3.0,
+        "n_steps": 6,
+        "total_chars": 3255,
+        "mean_step_length": 542.5,
+        "length_cv": 1.0957894868296731,
+        "growth_ratio": 0.4768602540834846,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "d442f2ae-2e65-5547-82c5-4a325f8d8710",
+      "source": "AG2",
+      "n_steps": 6,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.644
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.1111111111111111,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.2583333333333333,
+        "delta_structure": 0.13402335456475584,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.4,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.06,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.6349693523866387,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.03333333333333333,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.3333333333333333,
+        "code_density": 1.8333333333333333,
+        "n_steps": 6,
+        "total_chars": 2389,
+        "mean_step_length": 398.1666666666667,
+        "length_cv": 1.2221587047732774,
+        "growth_ratio": 0.2680467091295117,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.800 [GC3]"
+    },
+    {
+      "instance_id": "d8c37fac-fcc1-5fdd-9dc4-4daf33a02f73",
+      "source": "AG2",
+      "n_steps": 4,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8078,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.8078
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.6511
+        },
+        {
+          "mode": "GCF-3.1",
+          "name": "Target-Solver Conflation",
+          "category": "GC3",
+          "confidence": 0.636
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.0,
+        "gate_entropy": 0.16666666666666666,
+        "aggregate_separation": 1.0,
+        "solver_label_dependence": 0.5,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.25416666666666665,
+        "delta_structure": 0.03977272727272727,
+        "sigma_outlier": 0.8824204426044006,
+        "label_entropy": 0.3333333333333333,
+        "prediction_entropy": 0.33333333333333337,
+        "noisy_control_similarity": 0.0,
+        "trf_correlation": 0.0,
+        "target_variance": 0.04,
+        "cross_solver_label_agreement": 0.5,
+        "solver_specificity": 0.4,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.0,
+        "metric_range": 0.4678102213022003,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.11757955739559944,
+        "proxy_success_corr": 0.05,
+        "serious_solver_range": 0.3333333333333333
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.0,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 2,
+        "dominance": 0.5,
+        "entropy_agents": 1.0,
+        "handoff_rate": 1.0,
+        "error_density": 0.0,
+        "verify_density": 0.5,
+        "code_density": 1.75,
+        "n_steps": 4,
+        "total_chars": 2660,
+        "mean_step_length": 665.0,
+        "length_cv": 0.8824204426044006,
+        "growth_ratio": 0.07954545454545454,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 0.6666666666666666
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.808 [GC3]"
+    },
+    {
+      "instance_id": "astropy__astropy-12907",
+      "source": "HyperAgent",
+      "n_steps": 3551,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 3,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7592
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3752472820590113,
+        "gate_entropy": 0.015113113676898526,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0014643762320473105,
+        "fine_routing_accuracy": 0.010729372007885103,
+        "delta_structure": 0.47067065197085745,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7442973810194311,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0024406270534121843,
+        "alpha_profile_corr": 0.9909321317938609,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.004533934103069558,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7442973810194311,
+        "consecutive_dupe_rate": 0.006197183098591549,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.007321881160236553,
+        "verify_density": 0.045339341030695576,
+        "code_density": 0.21458744015770206,
+        "n_steps": 3551,
+        "total_chars": 218232,
+        "mean_step_length": 61.45649112925936,
+        "length_cv": 1.6364794357336836,
+        "growth_ratio": 0.9413413039417149,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "astropy__astropy-14365",
+      "source": "HyperAgent",
+      "n_steps": 10535,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 6,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7713
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.40038051126332264,
+        "gate_entropy": 0.011232399936718873,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.003910773611770289,
+        "fine_routing_accuracy": 0.011053630754627432,
+        "delta_structure": 0.5000433875414647,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7833887043189369,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.006517956019617149,
+        "alpha_profile_corr": 0.9932605600379687,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.003369719981015662,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7833887043189369,
+        "consecutive_dupe_rate": 0.017372318207708373,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.019553868058851447,
+        "verify_density": 0.03369719981015662,
+        "code_density": 0.22107261509254864,
+        "n_steps": 10535,
+        "total_chars": 507080,
+        "mean_step_length": 48.1328903654485,
+        "length_cv": 3.0997047643183206,
+        "growth_ratio": 1.0000867750829294,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "astropy__astropy-6938",
+      "source": "HyperAgent",
+      "n_steps": 2610,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7626
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3823768740390249,
+        "gate_entropy": 0.04291187739463601,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.001992337164750958,
+        "fine_routing_accuracy": 0.009731800766283525,
+        "delta_structure": 0.5048380369803976,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7574712643678161,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0033205619412515967,
+        "alpha_profile_corr": 0.9742528735632184,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.012873563218390805,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7574712643678161,
+        "consecutive_dupe_rate": 0.007282483710233806,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.00996168582375479,
+        "verify_density": 0.12873563218390804,
+        "code_density": 0.1946360153256705,
+        "n_steps": 2610,
+        "total_chars": 144556,
+        "mean_step_length": 55.38544061302682,
+        "length_cv": 3.1479449308251755,
+        "growth_ratio": 1.0096760739607953,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "astropy__astropy-7746",
+      "source": "HyperAgent",
+      "n_steps": 53244,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 4,
+      "top_gc_mode": "GCF-3.2",
+      "top_gc_name": "Proxy Calibration Drift",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.8054,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.8054
+        },
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.47630753470818765,
+        "gate_entropy": 0.020014774747702403,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.005048456164074825,
+        "fine_routing_accuracy": 0.014457967094883931,
+        "delta_structure": 0.49920605617359226,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.9158590639320863,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.008414093606791375,
+        "alpha_profile_corr": 0.9879911351513786,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.006004432424310721,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.9158590639320863,
+        "consecutive_dupe_rate": 0.03675600548428901,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.025242280820374125,
+        "verify_density": 0.060044324243107204,
+        "code_density": 0.2891593418976786,
+        "n_steps": 53244,
+        "total_chars": 2538465,
+        "mean_step_length": 47.67607617759747,
+        "length_cv": 1.4384969163589598,
+        "growth_ratio": 0.9984121123471845,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.2 (Proxy Calibration Drift) \u2014 confidence 0.805 [GC3]"
+    },
+    {
+      "instance_id": "django__django-10924",
+      "source": "HyperAgent",
+      "n_steps": 553,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7532
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3625891055376471,
+        "gate_entropy": 0.0018083182640144665,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0003616636528028933,
+        "fine_routing_accuracy": 0.008951175406871608,
+        "delta_structure": 0.45760294729336265,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7016274864376131,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0006027727546714888,
+        "alpha_profile_corr": 0.9989150090415914,
+        "metric_range": 0.9796453500404273,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.00054249547920434,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7016274864376131,
+        "consecutive_dupe_rate": 0.02355072463768116,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.0018083182640144665,
+        "verify_density": 0.0054249547920434,
+        "code_density": 0.17902350813743217,
+        "n_steps": 553,
+        "total_chars": 32231,
+        "mean_step_length": 58.28390596745027,
+        "length_cv": 1.3146707000808546,
+        "growth_ratio": 0.9152058945867253,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "django__django-11179",
+      "source": "HyperAgent",
+      "n_steps": 1130,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7521
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3588499494422976,
+        "gate_entropy": 0.0471976401179941,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0019469026548672567,
+        "fine_routing_accuracy": 0.011194690265486727,
+        "delta_structure": 0.40828802109078927,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7168141592920354,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0032448377581120944,
+        "alpha_profile_corr": 0.9716814159292035,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.01415929203539823,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7168141592920354,
+        "consecutive_dupe_rate": 0.0008857395925597874,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.009734513274336283,
+        "verify_density": 0.1415929203539823,
+        "code_density": 0.22389380530973452,
+        "n_steps": 1130,
+        "total_chars": 55124,
+        "mean_step_length": 48.78230088495575,
+        "length_cv": 1.589297321146532,
+        "growth_ratio": 0.8165760421815785,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "django__django-11742",
+      "source": "HyperAgent",
+      "n_steps": 766,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7207
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.28851260260414,
+        "gate_entropy": 0.03524804177545692,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0015665796344647518,
+        "fine_routing_accuracy": 0.017754569190600523,
+        "delta_structure": 0.511353517364203,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.5757180156657964,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.002610966057441253,
+        "alpha_profile_corr": 0.9788511749347258,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.010574412532637075,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.5757180156657964,
+        "consecutive_dupe_rate": 0.00130718954248366,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.007832898172323759,
+        "verify_density": 0.10574412532637076,
+        "code_density": 0.35509138381201044,
+        "n_steps": 766,
+        "total_chars": 45430,
+        "mean_step_length": 59.30809399477807,
+        "length_cv": 1.4920945933200327,
+        "growth_ratio": 1.022707034728406,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-18869",
+      "source": "HyperAgent",
+      "n_steps": 1043,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7321
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3149586954801501,
+        "gate_entropy": 0.010226909555768616,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0005752636625119846,
+        "fine_routing_accuracy": 0.017114093959731545,
+        "delta_structure": 0.5062988115449915,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.62607861936721,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0009587727708533078,
+        "alpha_profile_corr": 0.9938638542665388,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0030680728667305847,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.62607861936721,
+        "consecutive_dupe_rate": 0.003838771593090211,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.0028763183125599234,
+        "verify_density": 0.030680728667305847,
+        "code_density": 0.3422818791946309,
+        "n_steps": 1043,
+        "total_chars": 59271,
+        "mean_step_length": 56.827420901246406,
+        "length_cv": 1.5412515480057773,
+        "growth_ratio": 1.012597623089983,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23299",
+      "source": "HyperAgent",
+      "n_steps": 11204,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 5,
+      "top_gc_mode": "GCF-3.2",
+      "top_gc_name": "Proxy Calibration Drift",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.7916,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7916
+        },
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.4480098545223788,
+        "gate_entropy": 0.006158514816137093,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0016779721528025703,
+        "fine_routing_accuracy": 0.010978222063548733,
+        "delta_structure": 0.44826379094119284,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.891199571581578,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0027966202546709507,
+        "alpha_profile_corr": 0.9963048911103177,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.001847554444841128,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.891199571581578,
+        "consecutive_dupe_rate": 0.0048201374631795055,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.008389860764012852,
+        "verify_density": 0.01847554444841128,
+        "code_density": 0.21956444127097466,
+        "n_steps": 11204,
+        "total_chars": 558021,
+        "mean_step_length": 49.80551588718315,
+        "length_cv": 1.5966225551412654,
+        "growth_ratio": 0.8965275818823857,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.2 (Proxy Calibration Drift) \u2014 confidence 0.792 [GC3]"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23563",
+      "source": "HyperAgent",
+      "n_steps": 11583,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 5,
+      "top_gc_mode": "GCF-3.2",
+      "top_gc_name": "Proxy Calibration Drift",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.7921,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7921
+        },
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.44548084427495005,
+        "gate_entropy": 0.00909378687156465,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.005887939221272555,
+        "fine_routing_accuracy": 0.011072261072261072,
+        "delta_structure": 0.5870849510284236,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.8817232150565484,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.009813232035454257,
+        "alpha_profile_corr": 0.9945437278770612,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.002728136061469395,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.8817232150565484,
+        "consecutive_dupe_rate": 0.009238473493351752,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.029439696106362774,
+        "verify_density": 0.02728136061469395,
+        "code_density": 0.22144522144522144,
+        "n_steps": 11583,
+        "total_chars": 530317,
+        "mean_step_length": 45.78408011741345,
+        "length_cv": 1.5403652380943522,
+        "growth_ratio": 1.1741699020568472,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.2 (Proxy Calibration Drift) \u2014 confidence 0.792 [GC3]"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24265",
+      "source": "HyperAgent",
+      "n_steps": 516,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7414
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.33624971776924817,
+        "gate_entropy": 0.005813953488372093,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.011046511627906977,
+        "delta_structure": 0.4459478407178912,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.6627906976744187,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.9965116279069768,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0017441860465116279,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.6627906976744187,
+        "consecutive_dupe_rate": 0.009708737864077669,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.0,
+        "verify_density": 0.01744186046511628,
+        "code_density": 0.22093023255813954,
+        "n_steps": 516,
+        "total_chars": 26986,
+        "mean_step_length": 52.298449612403104,
+        "length_cv": 1.6477317371937097,
+        "growth_ratio": 0.8918956814357824,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24334",
+      "source": "HyperAgent",
+      "n_steps": 4040,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 4,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.765
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3876239462272546,
+        "gate_entropy": 0.02466996699669967,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.002178217821782178,
+        "fine_routing_accuracy": 0.007871287128712871,
+        "delta_structure": 0.45717426059152677,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7737623762376238,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.00363036303630363,
+        "alpha_profile_corr": 0.9851980198019802,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.007400990099009901,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7737623762376238,
+        "consecutive_dupe_rate": 0.0014855162168853676,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.01089108910891089,
+        "verify_density": 0.074009900990099,
+        "code_density": 0.15742574257425743,
+        "n_steps": 4040,
+        "total_chars": 191588,
+        "mean_step_length": 47.42277227722772,
+        "length_cv": 1.4395354037778856,
+        "growth_ratio": 0.9143485211830535,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25433",
+      "source": "HyperAgent",
+      "n_steps": 689,
+      "mast_active_categories": [
+        "FC1_Specification",
+        "FC2_Misalignment"
+      ],
+      "mast_annotation_count": 3,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7216
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.29172819556485635,
+        "gate_entropy": 0.013546202225447508,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0,
+        "fine_routing_accuracy": 0.013134978229317851,
+        "delta_structure": 0.38896720233060805,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.5820029027576197,
+        "trf_correlation": 1.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0,
+        "alpha_profile_corr": 0.9918722786647315,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0040638606676342524,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.5820029027576197,
+        "consecutive_dupe_rate": 0.0014534883720930232,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.0,
+        "verify_density": 0.040638606676342524,
+        "code_density": 0.262699564586357,
+        "n_steps": 689,
+        "total_chars": 37838,
+        "mean_step_length": 54.91727140783745,
+        "length_cv": 1.6367439630752636,
+        "growth_ratio": 0.7779344046612161,
+        "has_termination": 0.0,
+        "tail_termination": 1.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "mwaskom__seaborn-2848",
+      "source": "HyperAgent",
+      "n_steps": 3451,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 6,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7543
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.36221410303251733,
+        "gate_entropy": 0.014198782961460446,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.003940886699507389,
+        "fine_routing_accuracy": 0.012590553462764418,
+        "delta_structure": 0.5052367892543244,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7226890756302521,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.006568144499178982,
+        "alpha_profile_corr": 0.9914807302231238,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.004259634888438134,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7226890756302521,
+        "consecutive_dupe_rate": 0.0017391304347826088,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.019704433497536946,
+        "verify_density": 0.04259634888438134,
+        "code_density": 0.25181106925528834,
+        "n_steps": 3451,
+        "total_chars": 186198,
+        "mean_step_length": 53.954795711388,
+        "length_cv": 1.5153884918874632,
+        "growth_ratio": 1.0104735785086487,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3407",
+      "source": "HyperAgent",
+      "n_steps": 1262,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.725
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.2975445241934369,
+        "gate_entropy": 0.008188061278394084,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.002377179080824089,
+        "fine_routing_accuracy": 0.009904912836767036,
+        "delta_structure": 0.4022428596460487,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.5927099841521395,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.003961965134706815,
+        "alpha_profile_corr": 0.9950871632329635,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.002456418383518225,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.5927099841521395,
+        "consecutive_dupe_rate": 0.0023790642347343376,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.011885895404120444,
+        "verify_density": 0.02456418383518225,
+        "code_density": 0.19809825673534073,
+        "n_steps": 1262,
+        "total_chars": 51491,
+        "mean_step_length": 40.80110935023772,
+        "length_cv": 1.565210296918778,
+        "growth_ratio": 0.8044857192920974,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "pallets__flask-4992",
+      "source": "HyperAgent",
+      "n_steps": 1440,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7603
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.378125,
+        "gate_entropy": 0.009953703703703704,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0009722222222222222,
+        "fine_routing_accuracy": 0.014270833333333333,
+        "delta_structure": 0.39803170287056205,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.75625,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0016203703703703703,
+        "alpha_profile_corr": 0.9940277777777777,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0029861111111111113,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.75625,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.004861111111111111,
+        "verify_density": 0.029861111111111113,
+        "code_density": 0.28541666666666665,
+        "n_steps": 1440,
+        "total_chars": 58126,
+        "mean_step_length": 40.36527777777778,
+        "length_cv": 1.573366105527183,
+        "growth_ratio": 0.7960634057411241,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "pallets__flask-5063",
+      "source": "HyperAgent",
+      "n_steps": 1866,
+      "mast_active_categories": [
+        "FC2_Misalignment",
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 3,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7552
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3662915326902465,
+        "gate_entropy": 0.007145409074669525,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0012861736334405145,
+        "fine_routing_accuracy": 0.020176848874598072,
+        "delta_structure": 0.44270322120103506,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.732583065380493,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0021436227224008574,
+        "alpha_profile_corr": 0.9957127545551983,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0021436227224008574,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.732583065380493,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.006430868167202572,
+        "verify_density": 0.021436227224008574,
+        "code_density": 0.40353697749196143,
+        "n_steps": 1866,
+        "total_chars": 84519,
+        "mean_step_length": 45.29421221864952,
+        "length_cv": 1.393132839037139,
+        "growth_ratio": 0.8854064424020701,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "psf__requests-1963",
+      "source": "HyperAgent",
+      "n_steps": 777,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-2.1",
+          "name": "Scalar Projection",
+          "category": "GC2",
+          "confidence": 0.66
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.22651222651222652,
+        "gate_entropy": 0.014157014157014156,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0002574002574002574,
+        "fine_routing_accuracy": 0.007207207207207207,
+        "delta_structure": 0.4966550174737893,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.45302445302445304,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.000429000429000429,
+        "alpha_profile_corr": 0.9915057915057915,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.004247104247104247,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.45302445302445304,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.001287001287001287,
+        "verify_density": 0.04247104247104247,
+        "code_density": 0.14414414414414414,
+        "n_steps": 777,
+        "total_chars": 39926,
+        "mean_step_length": 51.384813384813384,
+        "length_cv": 1.4753091644415435,
+        "growth_ratio": 0.9933100349475786,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "psf__requests-2317",
+      "source": "HyperAgent",
+      "n_steps": 535,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7185
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.2831810703909832,
+        "gate_entropy": 0.022429906542056077,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0018691588785046728,
+        "fine_routing_accuracy": 0.013271028037383179,
+        "delta_structure": 0.4678094550703717,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.5626168224299065,
+        "trf_correlation": 1.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.003115264797507788,
+        "alpha_profile_corr": 0.9865420560747663,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0067289719626168224,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.5626168224299065,
+        "consecutive_dupe_rate": 0.003745318352059925,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.009345794392523364,
+        "verify_density": 0.06728971962616823,
+        "code_density": 0.26542056074766357,
+        "n_steps": 535,
+        "total_chars": 26818,
+        "mean_step_length": 50.12710280373832,
+        "length_cv": 1.7134584560945822,
+        "growth_ratio": 0.9356189101407434,
+        "has_termination": 0.0,
+        "tail_termination": 1.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "pydata__xarray-4493",
+      "source": "HyperAgent",
+      "n_steps": 1089,
+      "mast_active_categories": [
+        "FC1_Specification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7374
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3264467029924918,
+        "gate_entropy": 0.01224364860728497,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0011019283746556475,
+        "fine_routing_accuracy": 0.00945821854912764,
+        "delta_structure": 0.36352279825109307,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.6519742883379247,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0018365472910927456,
+        "alpha_profile_corr": 0.992653810835629,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0036730945821854912,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.6519742883379247,
+        "consecutive_dupe_rate": 0.0009191176470588235,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.005509641873278237,
+        "verify_density": 0.03673094582185491,
+        "code_density": 0.1891643709825528,
+        "n_steps": 1089,
+        "total_chars": 49770,
+        "mean_step_length": 45.70247933884298,
+        "length_cv": 1.5811839585319774,
+        "growth_ratio": 0.7270455965021861,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6506",
+      "source": "HyperAgent",
+      "n_steps": 325,
+      "mast_active_categories": [
+        "FC2_Misalignment"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.6747
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.2369325735992403,
+        "gate_entropy": 0.010256410256410256,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.038769230769230764,
+        "fine_routing_accuracy": 0.01076923076923077,
+        "delta_structure": 0.4992929292929293,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.46769230769230774,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.06461538461538462,
+        "alpha_profile_corr": 0.9938461538461538,
+        "metric_range": 0.9486562698942926,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.003076923076923077,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.46769230769230774,
+        "consecutive_dupe_rate": 0.006172839506172839,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.19384615384615383,
+        "verify_density": 0.03076923076923077,
+        "code_density": 0.2153846153846154,
+        "n_steps": 325,
+        "total_chars": 19786,
+        "mean_step_length": 60.88,
+        "length_cv": 1.5015925397885852,
+        "growth_ratio": 0.9985858585858586,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7168",
+      "source": "HyperAgent",
+      "n_steps": 395,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.72
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.27089571419392144,
+        "gate_entropy": 0.04641350210970464,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.04050632911392405,
+        "fine_routing_accuracy": 0.013291139240506327,
+        "delta_structure": 0.37996781416176884,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.5341772151898734,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.06751054852320675,
+        "alpha_profile_corr": 0.9721518987341772,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.013924050632911392,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.5341772151898734,
+        "consecutive_dupe_rate": 0.007614213197969543,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.20253164556962025,
+        "verify_density": 0.13924050632911392,
+        "code_density": 0.26582278481012656,
+        "n_steps": 395,
+        "total_chars": 25153,
+        "mean_step_length": 63.678481012658224,
+        "length_cv": 1.507001244528181,
+        "growth_ratio": 0.7599356283235377,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10508",
+      "source": "HyperAgent",
+      "n_steps": 689,
+      "mast_active_categories": [],
+      "mast_annotation_count": 0,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7341
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3185797583285517,
+        "gate_entropy": 0.03483309143686502,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.001741654571843251,
+        "fine_routing_accuracy": 0.014876632801161102,
+        "delta_structure": 0.4776706274037082,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.6342525399129173,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.002902757619738752,
+        "alpha_profile_corr": 0.979100145137881,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.010449927431059507,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.6342525399129173,
+        "consecutive_dupe_rate": 0.0029069767441860465,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.008708272859216255,
+        "verify_density": 0.10449927431059507,
+        "code_density": 0.29753265602322204,
+        "n_steps": 689,
+        "total_chars": 34064,
+        "mean_step_length": 49.43976777939042,
+        "length_cv": 1.669262753465418,
+        "growth_ratio": 0.9553412548074164,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "source": "HyperAgent",
+      "n_steps": 771,
+      "mast_active_categories": [
+        "FC2_Misalignment"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7285
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.30674617211582195,
+        "gate_entropy": 0.07220060527453524,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0007782101167315176,
+        "fine_routing_accuracy": 0.011867704280155641,
+        "delta_structure": 0.5443515643658944,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.6108949416342413,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0012970168612191958,
+        "alpha_profile_corr": 0.9566796368352789,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.02166018158236057,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.6108949416342413,
+        "consecutive_dupe_rate": 0.0025974025974025974,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.0038910505836575876,
+        "verify_density": 0.21660181582360571,
+        "code_density": 0.23735408560311283,
+        "n_steps": 771,
+        "total_chars": 43727,
+        "mean_step_length": 56.71465629053178,
+        "length_cv": 1.2659719086131045,
+        "growth_ratio": 1.0887031287317888,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-15535",
+      "source": "HyperAgent",
+      "n_steps": 2330,
+      "mast_active_categories": [
+        "FC2_Misalignment"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7548
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3643776824034335,
+        "gate_entropy": 0.00915593705293276,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0024892703862660947,
+        "fine_routing_accuracy": 0.0069313304721030046,
+        "delta_structure": 0.4146521226415094,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.728755364806867,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.004148783977110157,
+        "alpha_profile_corr": 0.9945064377682403,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.002746781115879828,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.728755364806867,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.012446351931330472,
+        "verify_density": 0.027467811158798282,
+        "code_density": 0.1386266094420601,
+        "n_steps": 2330,
+        "total_chars": 105485,
+        "mean_step_length": 45.272532188841204,
+        "length_cv": 1.3003901865262453,
+        "growth_ratio": 0.8293042452830188,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25570",
+      "source": "HyperAgent",
+      "n_steps": 578,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.6604
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.23442906574394462,
+        "gate_entropy": 0.010380622837370242,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.001038062283737024,
+        "fine_routing_accuracy": 0.012024221453287198,
+        "delta_structure": 0.5697541042368629,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.46885813148788924,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0017301038062283735,
+        "alpha_profile_corr": 0.9937716262975779,
+        "metric_range": 0.997085434966746,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0031141868512110727,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.46885813148788924,
+        "consecutive_dupe_rate": 0.0,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.005190311418685121,
+        "verify_density": 0.031141868512110725,
+        "code_density": 0.24048442906574394,
+        "n_steps": 578,
+        "total_chars": 29844,
+        "mean_step_length": 51.63321799307958,
+        "length_cv": 1.397290869933492,
+        "growth_ratio": 1.1395082084737258,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "source": "HyperAgent",
+      "n_steps": 1189,
+      "mast_active_categories": [
+        "FC1_Specification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.745
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.3435684996870867,
+        "gate_entropy": 0.02158676759181385,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.0011774600504625738,
+        "fine_routing_accuracy": 0.009335576114381834,
+        "delta_structure": 0.40602479941648434,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.6812447434819175,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.0019624334174376226,
+        "alpha_profile_corr": 0.9870479394449116,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.006476030277544155,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.6812447434819175,
+        "consecutive_dupe_rate": 0.005892255892255892,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.005887300252312868,
+        "verify_density": 0.06476030277544155,
+        "code_density": 0.18671152228763668,
+        "n_steps": 1189,
+        "total_chars": 62108,
+        "mean_step_length": 52.235492010092514,
+        "length_cv": 1.511117004185766,
+        "growth_ratio": 0.8120495988329687,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8435",
+      "source": "HyperAgent",
+      "n_steps": 2963,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7595
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.37495826879476635,
+        "gate_entropy": 0.007199910001124986,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.002632467094161323,
+        "fine_routing_accuracy": 0.011289233884576443,
+        "delta_structure": 0.3975316771878832,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7472156598042525,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.004387445156935539,
+        "alpha_profile_corr": 0.995680053999325,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0021599730003374956,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7472156598042525,
+        "consecutive_dupe_rate": 0.0027008777852802163,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.013162335470806615,
+        "verify_density": 0.021599730003374958,
+        "code_density": 0.22578467769152885,
+        "n_steps": 2963,
+        "total_chars": 158102,
+        "mean_step_length": 53.358758015524806,
+        "length_cv": 1.4403134334077758,
+        "growth_ratio": 0.7950633543757664,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "sympy__sympy-11400",
+      "source": "HyperAgent",
+      "n_steps": 935,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 2,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.684
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.2518722303015035,
+        "gate_entropy": 0.006060606060606061,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.003208556149732621,
+        "fine_routing_accuracy": 0.017967914438502673,
+        "delta_structure": 0.4531536616339777,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.5026737967914439,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.005347593582887701,
+        "alpha_profile_corr": 0.9963636363636363,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0018181818181818182,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.5026737967914439,
+        "consecutive_dupe_rate": 0.0010706638115631692,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.016042780748663103,
+        "verify_density": 0.01818181818181818,
+        "code_density": 0.3593582887700535,
+        "n_steps": 935,
+        "total_chars": 40530,
+        "mean_step_length": 43.3475935828877,
+        "length_cv": 1.61100596175227,
+        "growth_ratio": 0.9063073232679554,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    },
+    {
+      "instance_id": "sympy__sympy-12481",
+      "source": "HyperAgent",
+      "n_steps": 1683,
+      "mast_active_categories": [
+        "FC3_Verification"
+      ],
+      "mast_annotation_count": 1,
+      "top_gc_mode": "GCF-3.3",
+      "top_gc_name": "Fine-Routing Failure",
+      "top_gc_category": "GC3",
+      "top_gc_confidence": 0.78,
+      "top3_candidates": [
+        {
+          "mode": "GCF-3.3",
+          "name": "Fine-Routing Failure",
+          "category": "GC3",
+          "confidence": 0.78
+        },
+        {
+          "mode": "GCF-1.2",
+          "name": "Label-Solver Coupling",
+          "category": "GC1",
+          "confidence": 0.7639
+        },
+        {
+          "mode": "GCF-3.2",
+          "name": "Proxy Calibration Drift",
+          "category": "GC3",
+          "confidence": 0.7529
+        }
+      ],
+      "geocert_signals": {
+        "kappa_compression": 0.36215480679354217,
+        "gate_entropy": 0.008318478906714201,
+        "aggregate_separation": 0.0,
+        "solver_label_dependence": 1.0,
+        "false_execute_risk": 0.00011883541295306002,
+        "fine_routing_accuracy": 0.013131313131313133,
+        "delta_structure": 0.5920067443987197,
+        "sigma_outlier": 1.0,
+        "label_entropy": 0.0,
+        "prediction_entropy": 0.0,
+        "noisy_control_similarity": 0.7112299465240641,
+        "trf_correlation": 0.0,
+        "target_variance": 1.0,
+        "cross_solver_label_agreement": 0.0,
+        "solver_specificity": 0.2,
+        "alpha_rank_gap": 0.00019805902158843337,
+        "alpha_profile_corr": 0.9950089126559715,
+        "metric_range": 1.0,
+        "all_execute_rate": 0.0,
+        "native_tightness": 0.0,
+        "proxy_success_corr": 0.0024955436720142605,
+        "serious_solver_range": 0.0
+      },
+      "trace_signals": {
+        "repetition_ratio": 0.7112299465240641,
+        "consecutive_dupe_rate": 0.013079667063020214,
+        "n_agents": 1,
+        "dominance": 1.0,
+        "entropy_agents": 0.0,
+        "handoff_rate": 0.0,
+        "error_density": 0.0005941770647653001,
+        "verify_density": 0.024955436720142603,
+        "code_density": 0.26262626262626265,
+        "n_steps": 1683,
+        "total_chars": 76423,
+        "mean_step_length": 45.40879382055853,
+        "length_cv": 1.5669052542189936,
+        "growth_ratio": 1.1840134887974394,
+        "has_termination": 0.0,
+        "tail_termination": 0.0,
+        "max_role_bigram": 1.0
+      },
+      "summary": "GCF-3.3 (Fine-Routing Failure) \u2014 confidence 0.780 [GC3]"
+    }
+  ]
+}
