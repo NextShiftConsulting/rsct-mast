@@ -1,0 +1,3 @@
+[submodule "mast_repo"]
+	path = mast_repo
+	url = https://github.com/multi-agent-systems-failure-taxonomy/MAST
