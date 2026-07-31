@@ -4,3 +4,8 @@ __pycache__/
 .env
 *.db
 .Rhistory
+
+# PAR review artifacts (working docs)
+.par/
+# MMAR review artifacts (working docs)
+.mmar/
